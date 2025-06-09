@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Angelinetta Lorenzo</title>
+		<meta content="" name="description">
+		<meta content="" name="keywords">
+
+		<link href="img/icon.jpg" rel="icon">
+
+		<link href="https://fonts.googleapis.com" rel="preconnect">
+		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+		<link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+		<link href="css/main.css" rel="stylesheet">
+
+	</head>
+
+	<body class="index-page">
+		<div id="particles-js"></div>
+		<header id="header" class="header d-flex flex-column">
+			<div class="sidebar-overlay d-xl-none"></div>
+			<i class="header-toggle d-xl-none bi bi-list"></i>
+			<nav id="navmenu" class="navmenu">
+				<ul>
+					<li><a href="#home" class="active"><i class="bi bi-house navicon"></i><span class="nav-label">Home</span></a></li>
+					<li><a href="#istruzione"><i class="bi bi-mortarboard navicon"></i><span class="nav-label">Istruzione</span></a></li>
+					<li><a href="#competenze"><i class="bi-clipboard-check navicon"></i><span class="nav-label">Competenze</span></a></li>
+					<li><a href="#esperienze"><i class="bi bi-briefcase navicon"></i><span class="nav-label">Esperienze</span></a></li>
+					<li><a href="#progetti"><i class="bi-folder navicon"></i><span class="nav-label">Progetti</span></a></li>
+				</ul>
+			</nav>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const toggle = document.querySelector(".header-toggle");
+					const header = document.querySelector(".header");
+					const overlay = document.querySelector(".sidebar-overlay");
+
+					function toggleSidebar() {
+					header.classList.toggle("expanded");
+					overlay.classList.toggle("active");
+
+					// Cambia icona
+					if (header.classList.contains("expanded")) {
+						toggle.classList.remove("bi-list");
+						toggle.classList.add("bi-x");
+					} else {
+						toggle.classList.remove("bi-x");
+						toggle.classList.add("bi-list");
+					}
+					}
+
+					toggle.addEventListener("click", toggleSidebar);
+
+					// Chiudi cliccando sull'overlay
+					overlay.addEventListener("click", () => {
+					header.classList.remove("expanded");
+					overlay.classList.remove("active");
+					toggle.classList.remove("bi-x");
+					toggle.classList.add("bi-list");
+					});
+				});
+			</script>
+		</header>
+
+		<main class="main">
+			<section id="home" class="home section">
+				<div class="container">
+					<div class="text-center mb-5">
+						<h2>&lt; Lorenzo Angelinetta &gt;</h2>
+						<p>
+							<span class="typed" data-typed-items="Junior Software Developer, Junior Web Developer, Junior Full-Stack Developer"></span>
+						</p>
+					</div>
+					<!--<div class="content">
+						<p class="py-3">
+							Sono un giovane ragazzo appassionato di informatica. Con il percorso di studi intrapreso ho sviluppato competenze di programmazione, 
+							sviluppo software, sistemi informatici e molto altro. Sono intenzionato ad approfondire le conoscenze che ho acquisito fin ora 
+							espandendo il mio bagaglio personale.
+						</p>
+					</div>-->
+				</div>
+			</section>
+
+			<section id="istruzione" class="resume section">
+				<div class="container">
+				<h3 class="resume-title">Istruzione</h3>
+					<div class="row">
+						<div>
+							<div class="resume-item">
+								<h4>💻 Laurea Triennale in Informatica</h4>
+								<div class="edu-row">
+									<p><i class="bi bi-geo-alt"></i><em> Università degli Studi dell'Insubria, Como</em></p>
+									<h5><i class="bi bi-calendar-range"></i>&nbsp;&nbsp;2022 - luglio 2025</h5>
+								</div>
+								<p><em>Esito: in corso</em></p>
+								<p class="justify">
+									Grazie al percorso universitario ho approfondito e consolidato le conoscenze nell’ambito
+									della programmazione, dello sviluppo software, dell’architettura dei sistemi informatici, 
+									degli algoritmi e delle strutture dati, di progettazione di basi di dati, fondamenti di reti e 
+									nei principi teorici della sicurezza informatica.
+									Inoltre, ho acquisito competenze nell’analisi e trattamento dei big data, comprendendo i fondamenti 
+									della data science. Durante il tirocinio universitario ho avuto modo di analizzare e comprendere 
+									le basi del Machine Learning e del Deep Learning, con particolare attenzione all’implementazione e 
+									al testing di modelli LLM e Agent AI.
+								</p>
+							</div>
+							<div class="resume-item">
+								<h4>💻 Diploma in Informatica e Telecomunicazioni</h4>
+								<div class="edu-row">
+									<p><i class="bi bi-geo-alt"></i><em> ITC Marco Polo, Colico</em></p>
+									<h5><i class="bi bi-calendar-range"></i>&nbsp;&nbsp;2017 - 2022</h5>
+								</div>
+								<p><em>Esito: 90 / 100</em></p>
+								<p class="justify">
+									Questo percorso mi ha permesso di gettare le basi e di avere solide conoscenze nei principali ambiti dell'informatica. 
+									In particolare mi ha permesso di imparare le basi della programmazione, sviluppo di applicazioni desktop e web, gestione 
+									di database relazionali e progettazione di reti. 
+									Parallelamente alle competenze tecniche, ho avuto modo di sviluppare capacità trasversali come problem solving, lavoro di squadra 
+									e gestione di progetti informatici.
+									Questa esperienza mi ha permesso di costruire una solida base per gli studi universitari.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="competenze" class="competenze section">
+				<div class="container">
+				<h3 class="competenze-title">Competenze tecniche</h3>
+					<div class="row gy-4 justify-content-center">
+						<div class="col-lg-4 col-md-6">
+							<div class="competenze-item">
+								<div>
+									<img src="img/skills/frontend.png" alt="" class="competenze-img">
+								</div>
+								<h3>Front-end</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> HTML </li>
+										<li><i class="bi bi-check2"></i> CSS</li>
+										<li><i class="bi bi-check2"></i> JavaScript</li>
+										<li><i class="bi bi-check2"></i> Bootstrap</li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 ">
+							<div class="competenze-item position-relative ">
+								<div>
+									<img src="img/skills/backend.png" alt="" class="competenze-img ">
+								</div>
+								<h3>Back-end</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> PHP </li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6"  >
+							<div class="competenze-item position-relative">
+								<div>
+									<img src="img/skills/database.png" alt="" class="competenze-img">
+								</div>
+								<h3>Database</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> SQL </li>
+										<li><i class="bi bi-check2"></i> PostgreSQL</li>
+										<li><i class="bi bi-check2"></i> FireBase</li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6"  >
+							<div class="competenze-item position-relative">
+								<div>
+									<img src="img/skills/linguaggi.png" alt="" class="competenze-img">
+								</div>
+								<h3>Linguaggi</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> C </li>
+										<li><i class="bi bi-check2"></i> C++</li>
+										<li><i class="bi bi-check2"></i> Java</li>
+										<li><i class="bi bi-check2"></i> Python</li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6"  >
+							<div class="competenze-item position-relative">
+								<div>
+									<img src="img/skills/ai.png" alt="" class="competenze-img">
+								</div>
+								<h3>AI</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> Machine Learning</li>
+										<li><i class="bi bi-check2"></i> Reti neurali</li>
+										<li><i class="bi bi-check2"></i> Pytorch</li>
+										<li><i class="bi bi-check2"></i> LLM</li>
+										<li><i class="bi bi-check2"></i> Agent AI</li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6"  >
+							<div class="competenze-item position-relative">
+								<div>
+									<img src="img/skills/altro.png" alt="" class="competenze-img">
+								</div>
+								<h3>Tools & Altro</h3>
+								<hr class="competenze-separator">
+								<div>
+									<ul>
+										<li><i class="bi bi-check2"></i> VS Code </li>
+										<li><i class="bi bi-check2"></i> phpMyAdmin</li>
+										<li><i class="bi bi-check2"></i> Stampa 3d </li>
+										<li><i class="bi bi-check2"></i> Arduino</li>
+									</ul>
+								</div>					
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="esperienze" class="resume section">
+				<div class="container">
+					<h3 class="resume-title">Esperienze professionali</h3>
+					<div class="row">
+						<div>	
+							<div class="resume-item">
+								<h4>Stage scolastico presso WebTek SPA</h4>
+								<div class="edu-row">
+									<p><i class="bi bi-geo-alt"></i><em> WebTek SPA, Poggiridenti</em></p>
+									<h5>10/05/2021 - 04/06/2021</h5>
+								</div>
+								<p class="justify">
+									Sviluppo in team di un sito web informativo, in collaborazione con Synergie, tramite la piattaforma WordPress, 
+									con l’obiettivo di offrire supporto e orientamento ai giovani nel loro ingresso nel mondo del lavoro. 
+									Ho contribuito in particolare all’organizzazione dei contenuti, alla personalizzazione del tema e alla cura dell’interfaccia grafica.
+								</p>
+								<em><i class="bi bi-tools"></i> Competenze tecniche: WordPress, HTML, CSS e JavaScript.</em>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="progetti" class="progetti section">
+				<div class="container">
+					<h3 class="progetti-title">Progetti</h3>
+					<p class="git">
+						🔗 Il codice sorgente dei progetti realizzati è visualizzabile
+						<a href="https://github.com/LorenzoAngelinetta" target="_blank">qui</a>.
+					</p>
+					<div class="progetti-grid">
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/tesi.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Deep Lerning e Agent AI in dermatologia</h3>
+							<h4><i class="bi bi-pin-angle-fill"></i> Tesi di laurea</h4>
+							<h4><i class="bi bi-tools"></i> : Reti neurali, Pytorch, LLM, Agent AI</h4>
+							<p>
+								Sviluppo e implementazione di modelli di Deep Learning per la classificazione automatica di immagini dermatologiche.
+								Sono stati realizzati diversi sistemi in grado di fornire un contesto alla classificazione, 
+								integrando i modelli all'interno di un Agente AI, gestito da un LLM, che attiva la funzione in base al contesto.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/sito.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Personal Portfolio</h3>
+							<h4><i class="bi bi-pin-angle-fill"></i> Progetto personale</h4>
+							<h4><i class="bi bi-tools"></i> : HTML, CSS, JavaScript, Bootstrap</h4>
+							<p>
+								Portfolio personale che raccoglie informazioni relative al percorso di istruzione, alle competenze tecniche, alle esperienze 
+								professionali e ai progetti sviluppati. È pensato per fornire una panoramica completa e professionale del profilo.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Climate Monitoring</h3>
+							<h4><i class="bi bi-pin-angle-fill"></i> Progetto universitario</h4>
+							<h4><i class="bi bi-tools"></i> : Java, SQL, Postgres</h4>
+							<p>
+								Applicazione client-server che si occupa di raccogliere e analizzare dati meteorologici da più di 140.000 paesi. Possibile 
+								utilizzare l'applicazione in modalità operatore per raccogliere i dati e in modalità utente per consultarli, con la possibilità 
+								di visualizzare un prospetto riassuntivo per ogni area geografica.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/stormgram.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Stormgram</h3>
+							<h4><i class="bi bi-pin-angle-fill"></i> Progetto scolastico (superiori)</h4>
+							<h4><i class="bi bi-tools"></i> : Java (per Android), Firebase</h4>
+							<p>
+								Applicazione mobile per Android ispirata ad alcune delle funzionalità principali di Instagram. L’app consente agli utenti di 
+								registrare un account, pubblicare foto, mettere “like” e salvare contenuti. È inoltre possibile cercare altri utenti, 
+								seguirli e inviare messaggi, replicando così le funzioni base di un social network.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		
+		<footer id="footer" class="footer position-relative text-center">
+			<span class="email-responsive text-center">
+				<a href="mailto:lorenzoangelinetta@outlook. it?subject=Contact request"> 
+					<i class="bi bi-envelope"></i> <span aria-hidden="true">lorenzoangelinetta@outlook.it</span>
+				</a>						
+			</span>	
+			<div class="copyright text-center">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you've purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+				<p> © <span>Copyright 2025 Angelinetta Lorenzo - </span> <span> Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+			</div>
+		</footer>
+
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"></a>
+
+		<div id="preloader"></div>
+		
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/typed.js/typed.umd.js"></script><!-- SERVE PER PROJECTS -->
+		<script src="vendor/purecounter/purecounter_vanilla.js"></script> <!-- SERVE PER PROJECTS -->
+		<script src="vendor/glightbox/js/glightbox.min.js"></script> <!-- SERVE PER EVIDENZIARE NAVMENU -->
+
+		<script src="js/main.js"></script>
+		<script src="particles.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

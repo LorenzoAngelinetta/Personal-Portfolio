@@ -361,11 +361,22 @@ ISTRUZIONE ED ESPERIENZE
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
-.edu-row p, .edu-row h5 {
+.edu-row p,
+.edu-row h5 {
   margin: 0;
   font-style: italic;
+}
+
+/* ✅ Solo su schermi piccoli: luogo sopra, data sotto */
+@media (max-width: 768px) {
+  .edu-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }
 
 .justify {
@@ -374,6 +385,7 @@ ISTRUZIONE ED ESPERIENZE
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
 
 /*--------------------------------------------------------------
 COMPETENZE

@@ -162,10 +162,6 @@ HEADER
   }
 }
 
-main.main {
-  margin-left: 70px;
-  transition: margin-left 0.3s ease;
-}
 
 @media (min-width: 1200px) {
   .header:hover ~ main.main,
@@ -259,54 +255,29 @@ section,
   }
 }
 
+main.main {
+  margin-left: 70px;
+  transition: margin-left 0.3s ease;
+}
+
 /*--------------------------------------------------------------
 SEZIONE TITOLO NOME + INFO
 --------------------------------------------------------------*/
 .home {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding: 80px 0 20px;
   display: flex;
   flex-direction: column;
 }
 
 .home h2 {
-  font-size: clamp(28px, 6vw, 60px); /* Dimensione adattiva */
+  font-size: clamp(28px, 6vw, 60px);
   font-weight: 500;
   overflow: hidden;
-
 }
 
 .home p span {
   border-bottom: 1px solid var(--accent-color);
-  font-size: 26px;
-}
-
-.home .content p {
-  margin-bottom: 5px;
-  margin-top: 60px;
-  text-align: justify;
-  hyphens: auto;
-  word-wrap: break-word;
-  overflow-wrap: break-word;;
-}
-
-.home .content strong {
-  margin-right: 10px;
-}
-
-.home .content i {
-  font-size: 16px;
-  margin-right: 9px;
-  color: var(--accent-color);
-  line-height: 0;
-}
-
-.home h2 {
-  font-size: clamp(28px, 6vw, 60px);
-}
-
-.home p span {
   font-size: clamp(18px, 2vw, 26px);
 }
 
@@ -321,37 +292,35 @@ ISTRUZIONE ED ESPERIENZE
 }
 
 .resume .resume-item {
+  position: relative;
   padding: 0 0 20px 20px;
   border-left: 2px solid var(--accent-color);
-  position: relative;
 }
 
 .resume .resume-item h4 {
-  line-height: 1.4;
+  margin-bottom: 10px;
   font-size: 21px;
   font-weight: 600;
+  line-height: 1.4;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 10%);
-  margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
+  margin: 5px 0 2px;
   font-size: 15px;
-  padding: 0px 0;
-  display: inline-block;
   font-weight: 500;
-  margin-bottom: 2px;
-  margin-top: 5px;
+  display: inline-block;
 }
 
 .resume .resume-item::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: -9px;
   width: 18px;
   height: 18px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
+  border-radius: 50%;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
 }
@@ -360,23 +329,8 @@ ISTRUZIONE ED ESPERIENZE
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
   flex-wrap: wrap;
-}
-
-.edu-row p,
-.edu-row h5 {
-  margin: 0;
-  font-style: italic;
-}
-
-/* ✅ Solo su schermi piccoli: luogo sopra, data sotto */
-@media (max-width: 768px) {
-  .edu-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
+  margin-bottom: 5px;
 }
 
 .justify {
@@ -386,6 +340,19 @@ ISTRUZIONE ED ESPERIENZE
   overflow-wrap: break-word;
 }
 
+.edu-row p,
+.edu-row h5 {
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .edu-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
 
 /*--------------------------------------------------------------
 COMPETENZE
@@ -400,28 +367,36 @@ COMPETENZE
 .competenze .competenze-item {
   background-color: rgba(26, 26, 26, 0.92);
   padding: 35px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   height: 100%;
+  text-align: center;
   position: relative;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  text-align: center; /* ← CENTRAMENTO DI IMMAGINE E TITOLO */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.competenze .competenze-img {
+  width: 85px;
+  height: 77px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
 .competenze .competenze-item h3 {
-  color: color-mix(in srgb, var(--heading-color), transparent 1%);
-  font-weight: 700;
   margin: 30px 0 -20px;
   padding-bottom: 8px;
   font-size: 22px;
-  position: relative;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--heading-color), transparent 1%);
   display: inline-block;
-  transition: 0.3s;
+  position: relative;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .competenze .competenze-separator {
   width: 100%;
-  height: 4px; /* stesso spessore della border-bottom precedente */
+  height: 4px;
   background-color: var(--heading-color);
   border: none;
   transition: background-color 0.3s ease;
@@ -434,31 +409,22 @@ COMPETENZE
 .competenze .competenze-item:hover h3 {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-.competenze .competenze-item ul li i{
-  padding-bottom: 10px;
-  font-size: 16px;
-  margin-right: 5px;
-  color: var(--accent-color);
-  line-height: 0;
-  padding-left: 10px;
 }
 
 .competenze .competenze-item ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left
+  text-align: left;
 }
 
-.competenze .competenze-item .competenze-img {
-  width: 85px;
-  height: 77px;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto; /* ← CENTRA IMMAGINE */
+.competenze .competenze-item ul li i {
+  font-size: 16px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  line-height: 0;
+  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -472,41 +438,45 @@ PROGETTI
 }
 
 .progetti .git {
-  margin-top: -10px;
-  margin-bottom: 30px;
+  margin: -10px 0 30px;
   font-size: 16px;
 }
 
 .progetti .progetti-grid {
   display: grid;
+  gap: 35px;
   grid-template-columns: 1fr;
-  gap: 35px; 
 }
 
 @media (min-width: 768px) {
   .progetti .progetti-grid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 60px; 
-    row-gap: 40px;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
   }
 }
 
 .progetti .progetti-item {
   background-color: rgba(26, 26, 26, 0.92);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   text-align: justify;
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
+.progetti .progetti-img {
+  width: 110px;
+  height: 95px;
+  border-radius: 15px;
+}
+
 .progetti .progetti-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 28px 0 15px 0;
+  margin: 28px 0 15px;
 }
 
 .progetti .progetti-item h4 {
@@ -517,13 +487,7 @@ PROGETTI
 }
 
 .progetti .progetti-item p {
-  margin: 10px auto 15px auto;
-}
-
-.progetti .progetti-item .progetti-img {
-  width: 110px;
-  height: 95px;
-  border-radius: 15px;
+  margin: 10px 0 15px;
 }
 
 /*--------------------------------------------------------------

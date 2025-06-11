@@ -241,7 +241,7 @@ SEZIONI
 --------------------------------------------------------------*/
 section,
 .section {
-  padding: 30px;
+  padding: 35px;
   overflow: clip;
   margin-left: -15px;
 }
@@ -271,14 +271,51 @@ SEZIONE TITOLO NOME + INFO
 }
 
 .home h2 {
-  font-size: clamp(28px, 6vw, 60px);
+  font-size: clamp(30px, 6vw, 60px);
   font-weight: 500;
   overflow: hidden;
 }
 
 .home p span {
   border-bottom: 1px solid var(--accent-color);
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: clamp(24px, 2vw, 26px);
+}
+
+.home .contact {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: clamp(18px, 2vw, 20px);
+
+}
+
+.home .contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .contact span {
+  display: flex;
+  align-items: center;
+}
+
+.home .contact i {
+  font-size: 1.5em;
+}
+
+@media (max-width: 576px) {
+  .home .contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -286,7 +323,7 @@ ISTRUZIONE ED ESPERIENZE
 --------------------------------------------------------------*/
 .resume .resume-title {
   color: var(--heading-color);
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -300,16 +337,16 @@ ISTRUZIONE ED ESPERIENZE
 .resume .resume-item h4 {
   margin-bottom: 10px;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 1.4;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  color: var(--heading-color);
 }
 
 .resume .resume-item h5 {
-  margin: 5px 0 2px;
-  font-size: 15px;
-  font-weight: 500;
+  margin: 7px 0 7px;
+  font-size: 16px;
+  font-weight: bold;
   display: inline-block;
 }
 
@@ -331,6 +368,7 @@ ISTRUZIONE ED ESPERIENZE
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 5px;
+  color: var(--heading-color);
 }
 
 .justify {
@@ -338,19 +376,14 @@ ISTRUZIONE ED ESPERIENZE
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  color: color-mix(in srgb, var(--heading-color), transparent 15%);
+
 }
 
-.edu-row p,
-.edu-row h5 {
-  margin: 0;
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .edu-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
   }
 }
 
@@ -359,7 +392,7 @@ COMPETENZE
 --------------------------------------------------------------*/
 .competenze .competenze-title {
   color: var(--heading-color);
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 30px;
 }
@@ -376,8 +409,8 @@ COMPETENZE
 }
 
 .competenze .competenze-img {
-  width: 85px;
-  height: 77px;
+  width: 90px;
+  height: 82px;
   border-radius: 15px;
   display: block;
   margin: 0 auto;
@@ -386,7 +419,7 @@ COMPETENZE
 .competenze .competenze-item h3 {
   margin: 30px 0 -20px;
   padding-bottom: 8px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
   color: color-mix(in srgb, var(--heading-color), transparent 1%);
   display: inline-block;
@@ -418,8 +451,12 @@ COMPETENZE
   text-align: left;
 }
 
+.competenze .competenze-item li {
+  color: color-mix(in srgb, var(--heading-color), transparent 1%);
+}
+
 .competenze .competenze-item ul li i {
-  font-size: 16px;
+  font-size: 17px;
   margin-right: 5px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -432,26 +469,25 @@ PROGETTI
 --------------------------------------------------------------*/
 .progetti .progetti-title {
   color: var(--heading-color);
-  font-size: 33px;
+  font-size: 35px;
   font-weight: 600;
   margin-bottom: 30px;
 }
 
 .progetti .git {
   margin: -10px 0 30px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .progetti .progetti-grid {
   display: grid;
-  gap: 35px;
-  grid-template-columns: 1fr;
+  gap: 3rem 3rem; /* equivalente a gy-5 gx-5 */
 }
 
 @media (min-width: 768px) {
   .progetti .progetti-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px 60px;
+    gap: 3rem 3rem; /* equivalente a gy-5 gx-5 */
   }
 }
 
@@ -474,58 +510,47 @@ PROGETTI
 }
 
 .progetti .progetti-item h3 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
   margin: 28px 0 15px;
 }
 
 .progetti .progetti-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 15px;
   margin: 0;
   padding-bottom: 10px;
 }
 
 .progetti .progetti-item p {
-  margin: 10px 0 15px;
+  margin: 10px 0 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.icon-lg {
+  font-size: 1.3em; 
+  vertical-align: middle; 
+  margin-right: 3px; 
 }
 
 /*--------------------------------------------------------------
 FOOTER
 --------------------------------------------------------------*/
 .footer {
-  font-size: 8px;
-  padding: 7px 0;
+  font-size: 13px;
+  padding: 10px 0;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: color-mix(in srgb, var(--header-background-color) 92%, transparent);
 }
 
 .footer .copyright p {
   margin-bottom: 0;
   line-height: 1.4;
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: center;
-}
-
-.footer .email-responsive {
-  font-size: 18px;
-  display: inline-block;
-  margin-bottom: 15px;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-break: break-all;
-  text-align: center;
-}
-
-@media (max-width: 576px) {
-  .footer .email-responsive {
-    display: block;
-    white-space: normal;
-    text-align: center;
-  }
 }
 
 /*--------------------------------------------------------------

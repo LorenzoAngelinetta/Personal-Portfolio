@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -11,6 +11,7 @@
 
 		<link href="https://fonts.googleapis.com" rel="preconnect">
 		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +29,10 @@
 			<nav id="navmenu" class="navmenu">
 				<ul>
 					<li><a href="#home" class="active"><i class="bi bi-house navicon"></i><span class="nav-label">Home</span></a></li>
-					<li><a href="#istruzione"><i class="bi bi-mortarboard navicon"></i><span class="nav-label">Istruzione</span></a></li>
-					<li><a href="#competenze"><i class="bi-clipboard-check navicon"></i><span class="nav-label">Competenze</span></a></li>
-					<li><a href="#esperienze"><i class="bi bi-briefcase navicon"></i><span class="nav-label">Esperienze</span></a></li>
-					<li><a href="#progetti"><i class="bi-folder navicon"></i><span class="nav-label">Progetti</span></a></li>
+					<li><a href="#progetti"><i class="bi-folder navicon"></i><span class="nav-label">Projects</span></a></li>
+					<li><a href="#esperienze"><i class="bi bi-briefcase navicon"></i><span class="nav-label">Experiences</span></a></li>
+					<li><a href="#istruzione"><i class="bi bi-mortarboard navicon"></i><span class="nav-label">Instruction</span></a></li>
+					<li><a href="#competenze"><i class="bi-clipboard-check navicon"></i><span class="nav-label">Skills</span></a></li>
 				</ul>
 			</nav>
 		</header>
@@ -42,49 +43,153 @@
 					<div class="text-center mb-5">
 						<h2>&lt; Lorenzo Angelinetta &gt;</h2>
 						<p>
-							<span class="typed" data-typed-items="Junior Software Developer, Junior Web Developer, Junior Full-Stack Developer"></span>
+							<span class="typed" data-typed-items="Software Developer, Web Developer"></span>
 						</p>
+					</div>
+					<div class="contact">
+						<span>
+							<a href="mailto:lorenzoangelinetta@outlook. it?subject=Contact request"> 
+								<i class="fas fa-envelope icon-lg"></i><span aria-hidden="true">lorenzoangelinetta@outlook.it </span>
+							</a>
+						</span>
+						<span>
+							<a href="https://linkedin.com/in/lorenzoangelinetta"> 
+								<i class="fab fa-linkedin icon-lg"></i><span aria-hidden="true">Lorenzo Angelinetta </span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="progetti" class="progetti section">
+				<div class="container ">
+					<h3 class="progetti-title">Projects</h3>
+					<p class="git">
+						<i class="fab fa-github icon-lg"></i> The source code for the projects is available. 
+						<a href="https://github.com/LorenzoAngelinetta" target="_blank">View on GitHub</a>.
+					</p>
+					<div class="progetti-grid ">
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/tesi.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Deep Learning and Agentic AI in dermatology</h3>
+							<h4><span class="icon-lg">📌</span>Thesis</h4>
+							<h4><span class="icon-lg">🛠️</span>Neural Network, Pytorch, LLM, Agent AI</h4>
+							<p>
+								Development and implementation of Deep Learning models for automatic classification of dermatological images.
+								<br>Several systems have been created that can provide a context to the classification,
+								integrating the models within an AI Agent, managed by an LLM, which activates the function based on the context.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/sito.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Personal Portfolio</h3>
+							<h4><span class="icon-lg">📌</span>Personal project</h4>
+							<h4><span class="icon-lg">🛠️</span>HTML, CSS, JavaScript, Bootstrap</h4>
+							<p>
+								Personal portfolio that collects information related to the educational path, 
+								technical skills, professional experiences and projects developed. 
+								<br>It is designed to provide a complete and professional overview of the profile.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Climate Monitoring</h3>
+							<h4><span class="icon-lg">📌</span>University project</h4>
+							<h4><span class="icon-lg">🛠️</span>Java, SQL, Postgres</h4>
+							<p>
+								Client-server application that collects and analyzes meteorological data from more than 140,000 countries. 
+								<br>It is possible to use the application in operator mode to collect data and in user mode to consult them, with the possibility of viewing a summary report for each geographical area.
+							</p>
+						</div>
+
+						<div class="progetti-item">
+							<div class="d-flex justify-content-center">
+								<img src="img/progetti/stormgram.jpg" alt="" class="progetti-img">
+							</div>
+							<h3>Stormgram</h3>
+							<h4><span class="icon-lg">📌</span>School project (high school)</h4>
+							<h4><span class="icon-lg">🛠️</span>Java (for Android), Firebase</h4>
+							<p>
+								Mobile application for Android inspired by some of the main features of Instagram. 
+								<br>The app allows users to
+								register an account, post photos, like and save content. It is also possible to search for other users,
+								follow them and send messages, thus replicating the basic functions of a social network.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<section id="istruzione" class="resume section">
 				<div class="container">
-				<h3 class="resume-title">Istruzione</h3>
+				<h3 class="resume-title">Instruction</h3>
 					<div class="row">
 						<div>
 							<div class="resume-item">
-								<h4>💻 Laurea Triennale in Informatica</h4>
+								<h4>💻 Bachelor's Degree in Computer Science</h4>
 								<div class="edu-row">
-									<p><i class="bi bi-geo-alt"></i><em> Università degli Studi dell'Insubria, Como</em></p>
-									<h5><i class="bi bi-calendar-range"></i>&nbsp;&nbsp;2022 - luglio 2025</h5>
+									<h5><span class="icon-lg">📍</span><em> University of Insubria, Como</em></h5>
+									<h5><span class="icon-lg">📅</span></i>&nbsp;&nbsp;2022 - July 2025</h5>
 								</div>
-								<p><em>Esito: in corso</em></p>
+								<!--<h5><em>Result: in progress</em></h5>-->
 								<p class="justify">
-									Grazie al percorso universitario ho approfondito e consolidato le conoscenze nell’ambito
-									della programmazione, dello sviluppo software, dell’architettura dei sistemi informatici, 
-									degli algoritmi e delle strutture dati, di progettazione di basi di dati, fondamenti di reti e 
-									nei principi teorici della sicurezza informatica.
-									Inoltre, ho acquisito competenze nell’analisi e trattamento dei big data, comprendendo i fondamenti 
-									della data science. Durante il tirocinio universitario ho avuto modo di analizzare e comprendere 
-									le basi del Machine Learning e del Deep Learning, con particolare attenzione all’implementazione e 
-									al testing di modelli LLM e Agent AI.
+									Thanks to my university career, I have deepened and consolidated my knowledge in the fields of
+									programming, software development, computer system architecture,
+									algorithms and data structures, database design, network fundamentals and
+									the theoretical principles of computer security.
+									Furthermore, I have acquired skills in the analysis and treatment of big data, understanding the
+									fundamentals of data science. 
+									<br><br>
+									During my university internship, I had the opportunity to analyze and understand
+									the basics of Machine Learning and Deep Learning, with particular attention to the implementation and
+									testing of LLM and Agent AI models.
 								</p>
 							</div>
 							<div class="resume-item">
-								<h4>💻 Diploma in Informatica e Telecomunicazioni</h4>
+								<h4>💻 Diploma in Computer Science and Telecommunications</h4>
 								<div class="edu-row">
-									<p><i class="bi bi-geo-alt"></i><em> ITC Marco Polo, Colico</em></p>
-									<h5><i class="bi bi-calendar-range"></i>&nbsp;&nbsp;2017 - 2022</h5>
+									<h5><span class="icon-lg">📍</span><em> ITC Marco Polo, Colico</em></h5>
+									<h5><span class="icon-lg">📅</span></i>&nbsp;&nbsp;2017 - 2022</h5>
 								</div>
-								<p><em>Esito: 90 / 100</em></p>
+								<h5><em>Result: 90 / 100</em></h5>
 								<p class="justify">
-									Questo percorso mi ha permesso di gettare le basi e di avere solide conoscenze nei principali ambiti dell'informatica. 
-									In particolare mi ha permesso di imparare le basi della programmazione, sviluppo di applicazioni desktop e web, gestione 
-									di database relazionali e progettazione di reti. 
-									Parallelamente alle competenze tecniche, ho avuto modo di sviluppare capacità trasversali come problem solving, lavoro di squadra 
-									e gestione di progetti informatici.
-									Questa esperienza mi ha permesso di costruire una solida base per gli studi universitari.
+									This path allowed me to lay the foundations and have solid knowledge in the main areas of computer science.
+									In particular, it allowed me to learn the basics of programming, development of desktop and web applications, management of relational databases and network design.
+									<br>
+									In parallel with technical skills, I had the opportunity to develop transversal skills such as problem solving, teamwork and management of computer projects.
+									This experience allowed me to build a solid foundation for university studies.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="esperienze" class="resume section">
+				<div class="container">
+					<h3 class="resume-title">Professional experiences</h3>
+					<div class="row">
+						<div>	
+							<div class="resume-item">
+								<h4>School Internship at WebTek SPA</h4>
+								<div class="edu-row">
+									<h5><span class="icon-lg">📍</span><em> WebTek SPA, Poggiridenti</em></h5>
+									<h5><span class="icon-lg">📅</span>May 2021 - June 2021</h5>
+								</div>
+								<h5><span class="icon-lg">🛠️</span> Technical skills: , HTML, CSS, JavaScriptl and WordPress.</h5>
+								<p class="justify">
+									Team development of an information website, in collaboration with Synergie, through the WordPress platform,
+									with the aim of offering support and guidance to young people as they enter the world of work.
+									<br>
+									I contributed in particular to the organization of the contents, the customization of the theme and the care of the graphic interface.
 								</p>
 							</div>
 						</div>
@@ -94,8 +199,8 @@
 			
 			<section id="competenze" class="competenze section">
 				<div class="container">
-				<h3 class="competenze-title">Competenze tecniche</h3>
-					<div class="row gy-4 justify-content-center">
+				<h3 class="competenze-title">Skills</h3>
+					<div class="row gy-5 gx-5 justify-content-center">
 						<div class="col-lg-4 col-md-6">
 							<div class="competenze-item">
 								<div>
@@ -105,9 +210,9 @@
 								<hr class="competenze-separator">
 								<div>
 									<ul>
+										<li><i class="bi bi-check2"></i> JavaScript</li>
 										<li><i class="bi bi-check2"></i> HTML </li>
 										<li><i class="bi bi-check2"></i> CSS</li>
-										<li><i class="bi bi-check2"></i> JavaScript</li>
 										<li><i class="bi bi-check2"></i> Bootstrap</li>
 									</ul>
 								</div>					
@@ -137,6 +242,7 @@
 								<div>
 									<ul>
 										<li><i class="bi bi-check2"></i> SQL </li>
+										<li><i class="bi bi-check2"></i> MySQL</li>
 										<li><i class="bi bi-check2"></i> PostgreSQL</li>
 										<li><i class="bi bi-check2"></i> FireBase</li>
 									</ul>
@@ -148,14 +254,14 @@
 								<div>
 									<img src="img/skills/linguaggi.png" alt="" class="competenze-img">
 								</div>
-								<h3>Linguaggi</h3>
+								<h3>Languages</h3>
 								<hr class="competenze-separator">
 								<div>
 									<ul>
+										<li><i class="bi bi-check2"></i> Python</li>
+										<li><i class="bi bi-check2"></i> Java</li>
 										<li><i class="bi bi-check2"></i> C </li>
 										<li><i class="bi bi-check2"></i> C++</li>
-										<li><i class="bi bi-check2"></i> Java</li>
-										<li><i class="bi bi-check2"></i> Python</li>
 									</ul>
 								</div>					
 							</div>
@@ -170,7 +276,7 @@
 								<div>
 									<ul>
 										<li><i class="bi bi-check2"></i> Machine Learning</li>
-										<li><i class="bi bi-check2"></i> Reti neurali</li>
+										<li><i class="bi bi-check2"></i> Neural Networks</li>
 										<li><i class="bi bi-check2"></i> Pytorch</li>
 										<li><i class="bi bi-check2"></i> LLM</li>
 										<li><i class="bi bi-check2"></i> Agent AI</li>
@@ -183,13 +289,13 @@
 								<div>
 									<img src="img/skills/altro.png" alt="" class="competenze-img">
 								</div>
-								<h3>Tools & Altro</h3>
+								<h3>Tools & Other</h3>
 								<hr class="competenze-separator">
 								<div>
 									<ul>
 										<li><i class="bi bi-check2"></i> VS Code </li>
 										<li><i class="bi bi-check2"></i> phpMyAdmin</li>
-										<li><i class="bi bi-check2"></i> Stampa 3d </li>
+										<li><i class="bi bi-check2"></i> 3d printing</li>
 										<li><i class="bi bi-check2"></i> Arduino</li>
 									</ul>
 								</div>					
@@ -198,108 +304,10 @@
 					</div>
 				</div>
 			</section>
-			
-			<section id="esperienze" class="resume section">
-				<div class="container">
-					<h3 class="resume-title">Esperienze professionali</h3>
-					<div class="row">
-						<div>	
-							<div class="resume-item">
-								<h4>Stage scolastico presso WebTek SPA</h4>
-								<div class="edu-row">
-									<p><i class="bi bi-geo-alt"></i><em> WebTek SPA, Poggiridenti</em></p>
-									<h5>10/05/2021 - 04/06/2021</h5>
-								</div>
-								<p class="justify">
-									Sviluppo in team di un sito web informativo, in collaborazione con Synergie, tramite la piattaforma WordPress, 
-									con l’obiettivo di offrire supporto e orientamento ai giovani nel loro ingresso nel mondo del lavoro. 
-									Ho contribuito in particolare all’organizzazione dei contenuti, alla personalizzazione del tema e alla cura dell’interfaccia grafica.
-								</p>
-								<em><i class="bi bi-tools"></i> Competenze tecniche: WordPress, HTML, CSS e JavaScript.</em>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section id="progetti" class="progetti section">
-				<div class="container">
-					<h3 class="progetti-title">Progetti</h3>
-					<p class="git">
-						🔗 Il codice sorgente dei progetti realizzati è visualizzabile
-						<a href="https://github.com/LorenzoAngelinetta" target="_blank">qui</a>.
-					</p>
-					<div class="progetti-grid">
-						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/tesi.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Deep Lerning e Agent AI in dermatologia</h3>
-							<h4><i class="bi bi-pin-angle-fill"></i> Tesi di laurea</h4>
-							<h4><i class="bi bi-tools"></i> : Reti neurali, Pytorch, LLM, Agent AI</h4>
-							<p>
-								Sviluppo e implementazione di modelli di Deep Learning per la classificazione automatica di immagini dermatologiche.
-								Sono stati realizzati diversi sistemi in grado di fornire un contesto alla classificazione, 
-								integrando i modelli all'interno di un Agente AI, gestito da un LLM, che attiva la funzione in base al contesto.
-							</p>
-						</div>
-
-						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/sito.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Personal Portfolio</h3>
-							<h4><i class="bi bi-pin-angle-fill"></i> Progetto personale</h4>
-							<h4><i class="bi bi-tools"></i> : HTML, CSS, JavaScript, Bootstrap</h4>
-							<p>
-								Portfolio personale che raccoglie informazioni relative al percorso di istruzione, alle competenze tecniche, alle esperienze 
-								professionali e ai progetti sviluppati. È pensato per fornire una panoramica completa e professionale del profilo.
-							</p>
-						</div>
-
-						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Climate Monitoring</h3>
-							<h4><i class="bi bi-pin-angle-fill"></i> Progetto universitario</h4>
-							<h4><i class="bi bi-tools"></i> : Java, SQL, Postgres</h4>
-							<p>
-								Applicazione client-server che si occupa di raccogliere e analizzare dati meteorologici da più di 140.000 paesi. Possibile 
-								utilizzare l'applicazione in modalità operatore per raccogliere i dati e in modalità utente per consultarli, con la possibilità 
-								di visualizzare un prospetto riassuntivo per ogni area geografica.
-							</p>
-						</div>
-
-						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/stormgram.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Stormgram</h3>
-							<h4><i class="bi bi-pin-angle-fill"></i> Progetto scolastico (superiori)</h4>
-							<h4><i class="bi bi-tools"></i> : Java (per Android), Firebase</h4>
-							<p>
-								Applicazione mobile per Android ispirata ad alcune delle funzionalità principali di Instagram. L’app consente agli utenti di 
-								registrare un account, pubblicare foto, mettere “like” e salvare contenuti. È inoltre possibile cercare altri utenti, 
-								seguirli e inviare messaggi, replicando così le funzioni base di un social network.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
 		</main>
 		
 		<footer id="footer" class="footer position-relative text-center">
-			<span class="email-responsive text-center">
-				<a href="mailto:lorenzoangelinetta@outlook. it?subject=Contact request"> 
-					<i class="bi bi-envelope"></i> <span aria-hidden="true">lorenzoangelinetta@outlook.it</span>
-				</a>						
-			</span>	
 			<div class="copyright text-center">
-				<!-- All the links in the footer should remain intact. -->
-				<!-- You can delete the links only if you've purchased the pro version. -->
-				<!-- Licensing information: https://bootstrapmade.com/license/ -->
-				<!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
 				<p> © <span>Copyright 2025 Angelinetta Lorenzo - </span> <span> Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
 			</div>
 		</footer>

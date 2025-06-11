@@ -377,7 +377,11 @@ ISTRUZIONE ED ESPERIENZE
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: color-mix(in srgb, var(--heading-color), transparent 15%);
+}
 
+.highlight {
+  font-weight: bold;
+  color: color-mix(in srgb, var(--heading-color), white 10%);
 }
 
 @media (max-width: 500px) {

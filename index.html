@@ -47,15 +47,23 @@
 						</p>
 					</div>
 					<div class="contact">
-						<span>
-							<a href="mailto:lorenzoangelinetta@outlook. it?subject=Contact request"> 
-								<i class="fas fa-envelope icon-lg"></i><span aria-hidden="true">lorenzoangelinetta@outlook.it </span>
-							</a>
+						<span class="email-wrapper">
+							<div class="email-box">
+								<a href="mailto:lorenzoangelinetta@outlook .it?subject=Contact request" class="email-link">
+								<i class="fas fa-envelope"></i>
+								<span class="tooltip-text">lorenzoangelinetta@outlook.it</span>
+								</a>
+								<i class="fas fa-copy copy-icon" title="Copia" onclick="copyEmail()"></i>
+							</div>
+							<span class="copied-msg">Copiato!</span>
 						</span>
-						<span>
-							<a href="https://linkedin.com/in/lorenzoangelinetta"> 
-								<i class="fab fa-linkedin icon-lg"></i><span aria-hidden="true">Lorenzo Angelinetta </span>
-							</a>
+						<span class="email-wrapper">
+							<div class="email-box">
+								<a href="https://linkedin.com/in/lorenzoangelinetta" target="_blank" class="email-link">
+								<i class="fab fa-linkedin"></i>
+								<span class="tooltip-text-lin">Lorenzo Angelinetta</span>
+								</a>
+							</div>
 						</span>
 					</div>
 				</div>
@@ -356,5 +364,17 @@
 					});
 				});
 			</script>
+			<script>
+				function copyEmail() {
+					const email = "lorenzoangelinetta@outlook.it";
+					navigator.clipboard.writeText(email).then(() => {
+						const msg = document.querySelector(".copied-msg");
+						msg.style.opacity = "1";
+						setTimeout(() => {
+								msg.style.opacity = "0";
+							}, 2000);
+						});
+					}
+			</script>			
 	</body>
 </html>

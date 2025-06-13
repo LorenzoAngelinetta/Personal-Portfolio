@@ -282,7 +282,7 @@ SEZIONE TITOLO NOME + INFO
 }
 
 .home .contact {
-  font-size: 20px;
+  font-size: clamp(18px, 2vw, 20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,14 +290,20 @@ SEZIONE TITOLO NOME + INFO
   padding: 40px 0;
   flex-wrap: wrap;
   text-align: center;
-  font-size: clamp(18px, 2vw, 20px);
-
 }
 
 .home .contact a {
   display: flex;
   align-items: center;
   gap: 10px;
+  position: relative;
+  background-color: rgba(26, 26, 26, 0.92);
+  padding: 10px 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  color: var(--accent-color);
 }
 
 .home .contact span {
@@ -306,16 +312,123 @@ SEZIONE TITOLO NOME + INFO
 }
 
 .home .contact i {
-  font-size: 1.5em;
+    font-size: 1.5em;
+    color: var(--accent-color);
+}
+
+.email-wrapper {
+    position: relative;
+}
+
+.email-box {
+    display: inline-flex; 
+    align-items: center;
+    gap: 0px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    overflow: visible; 
+}
+
+.email-link {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.tooltip-text {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 0.95em;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.8s ease, opacity 0.8s ease, margin-left 0.8s ease;
+    margin-left: -100px;
+}
+
+.tooltip-text-lin {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 0.95em;
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.8s ease, opacity 0.8s ease, margin-left 0.8s ease;
+    margin-left: -10px;
+}
+
+.email-box:hover .tooltip-text{
+    max-width: 500px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.email-box:hover .tooltip-text-lin{
+    max-width: 500px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.copy-icon {
+    cursor: pointer;
+    color: var(--accent-color);
+    font-size: 0.8em !important;
+    padding-right: 20px;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.email-box:hover .copy-icon {
+    opacity: 1; 
+}
+
+.copied-msg {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-size: 0.8em;
+    background-color: #222;
+    color: var(--accent-color);
+    padding: 4px 8px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
 }
 
 @media (max-width: 576px) {
-  .home .contact {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    text-align: center;
-  }
+    .home .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .home .contact .tooltip-text {
+        display: inline;
+        opacity: 1;
+        max-width: none;
+        margin-left: 10px;
+        color: var(--accent-color);
+    }
+
+    .home .contact .tooltip-text-lin {
+        display: inline;
+        opacity: 1;
+        max-width: none;
+        margin-left: 10px;
+        color: var(--accent-color);
+    }
+
+    .copy-icon {
+        opacity: 1; 
+        pointer-events: auto; 
+    }
 }
 
 /*--------------------------------------------------------------

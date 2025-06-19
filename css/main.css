@@ -313,7 +313,12 @@ SEZIONE TITOLO NOME + INFO
 
 .home .contact i {
     font-size: 1.5em;
-    color: var(--accent-color);
+    color: var(--heading-color);
+}
+
+.email-box i.copy-icon {
+  font-size: 1.5em;
+  color: var(--heading-color);
 }
 
 .email-wrapper {
@@ -340,7 +345,7 @@ SEZIONE TITOLO NOME + INFO
 
 .tooltip-text {
     display: inline-block;
-    color: var(--heading-color);
+    color: var(--accent-color);
     font-size: 0.95em;
     max-width: 0;
     opacity: 0;
@@ -352,7 +357,7 @@ SEZIONE TITOLO NOME + INFO
 
 .tooltip-text-lin {
     display: inline-block;
-    color: var(--heading-color);
+    color: var(--accent-color);
     font-size: 0.95em;
     max-width: 0;
     opacity: 0;
@@ -376,7 +381,7 @@ SEZIONE TITOLO NOME + INFO
 
 .copy-icon {
     cursor: pointer;
-    color: var(--accent-color);
+    color: var(--heading-color) !important;
     font-size: 0.8em !important;
     padding-right: 20px;
     opacity: 0; 

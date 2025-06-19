@@ -312,8 +312,7 @@ SEZIONE TITOLO NOME + INFO
 }
 
 .home .contact i {
-    font-size: 1.5em;
-    color: var(--heading-color);
+    font-size: 1.5em;;
 }
 
 .email-box i.copy-icon {

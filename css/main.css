@@ -340,7 +340,7 @@ SEZIONE TITOLO NOME + INFO
 
 .tooltip-text {
     display: inline-block;
-    color: var(--accent-color);
+    color: var(--heading-color);
     font-size: 0.95em;
     max-width: 0;
     opacity: 0;
@@ -352,7 +352,7 @@ SEZIONE TITOLO NOME + INFO
 
 .tooltip-text-lin {
     display: inline-block;
-    color: var(--accent-color);
+    color: var(--heading-color);
     font-size: 0.95em;
     max-width: 0;
     opacity: 0;
@@ -393,7 +393,7 @@ SEZIONE TITOLO NOME + INFO
     right: 0;
     font-size: 0.8em;
     background-color: #222;
-    color: var(--accent-color);
+    color: var(--heading-color);
     padding: 4px 8px;
     border-radius: 6px;
     opacity: 0;
@@ -485,7 +485,7 @@ ISTRUZIONE ED ESPERIENZE
 }
 
 .justify {
-  text-align: justify;
+  /*text-align: justify;*/
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -614,7 +614,7 @@ PROGETTI
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-  text-align: justify;
+  /*text-align: justify;*/
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;

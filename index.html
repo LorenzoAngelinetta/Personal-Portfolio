@@ -81,9 +81,7 @@
 								<i class="fas">📧</i>
 								<span class="tooltip-text">lorenzoangelinetta@outlook.it</span>
 								</a>
-								<i class="fas fa-copy copy-icon" title="Copia" onclick="copyEmail()"></i>
 							</div>
-							<span class="copied-msg">Copiato!</span>
 						</span>
 
 						<!-- Wrapper linkedin -->
@@ -111,7 +109,7 @@
 					<!-- Paragrafo introduttivo con il link a Github -->
 					<p class="git">
 						<i class="fab fa-github icon-lg"></i> The source code for the projects is available. 
-						<a href="https://github.com/LorenzoAngelinetta" target="_blank">View on GitHub</a>.
+						<a href="https://github.com/lorenzoangelinetta" target="_blank">View on GitHub</a>.
 					</p>
 
 					<!-- Graglia dei progetti -->
@@ -123,8 +121,8 @@
 								<img src="img/progetti/tesi.jpg" alt="" class="progetti-img">
 							</div>
 							<h3>Deep Learning and Agentic AI in dermatology</h3>
-							<h4><em><span class="icon-lg">📌</span>Thesis</em></h4>
-							<h4><span class="icon-lg">🛠️</span>Neural Network, Pytorch, LLM, Agent AI</h4>
+							<h4><em><span class="icon-p">📌</span>Thesis</em></h4>
+							<h4><span class="icon-p">🛠️</span>Neural Network, Pytorch, LLM, Agent AI</h4>
 							<p>
 								Development and implementation of Deep Learning models for automatic classification of dermatological images.
 								<br>Several systems have been created that can provide a context to the classification,
@@ -138,8 +136,8 @@
 								<img src="img/progetti/sito.jpg" alt="" class="progetti-img">
 							</div>
 							<h3>Personal Portfolio</h3>
-							<h4><em><span class="icon-lg">📌</span>Personal project</em></h4>
-							<h4><span class="icon-lg">🛠️</span>HTML, CSS, JavaScript, Bootstrap</h4>
+							<h4><em><span class="icon-p">📌</span>Personal project</em></h4>
+							<h4><span class="icon-p">🛠️</span>HTML, CSS, JavaScript, Bootstrap</h4>
 							<p>
 								Personal portfolio that collects information related to the educational path, 
 								technical skills, professional experiences and projects developed. 
@@ -153,8 +151,8 @@
 								<img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img">
 							</div>
 							<h3>Climate Monitoring</h3>
-							<h4><em><span class="icon-lg">📌</span>University project</em></h4>
-							<h4><span class="icon-lg">🛠️</span>Java, SQL, Postgres</h4>
+							<h4><em><span class="icon-p">📌</span>University project</em></h4>
+							<h4><span class="icon-p">🛠️</span>Java, SQL, Postgres</h4>
 							<p>
 								Client-server application that collects and analyzes meteorological data from more than 140,000 countries. 
 								<br>It is possible to use the application in operator mode to collect data and in user mode to consult them, with the possibility of viewing a summary report for each geographical area.
@@ -167,8 +165,8 @@
 								<img src="img/progetti/stormgram.jpg" alt="" class="progetti-img">
 							</div>
 							<h3>Stormgram</h3>
-							<h4><em><span class="icon-lg">📌</span>School project (high school)</em></h4>
-							<h4><span class="icon-lg">🛠️</span>Java (for Android), Firebase</h4>
+							<h4><em><span class="icon-p">📌</span>School project (high school)</em></h4>
+							<h4><span class="icon-p">🛠️</span>Java (for Android), Firebase</h4>
 							<p>
 								Mobile application for Android inspired by some of the main features of Instagram. 
 								<br>The app allows users to
@@ -252,7 +250,7 @@
 									<h5><span class="icon-lg">📍</span><em> WebTek SPA, Poggiridenti</em></h5>
 									<h5><span class="icon-lg">📅</span>May 2021 - June 2021</h5>
 								</div>
-								<h5><span class="icon-lg">🛠️</span> Technical skills: , HTML, CSS, JavaScriptl and WordPress.</h5>
+								<h5><span class="icon-lg">🛠️</span> Technical skills: HTML, CSS, JavaScriptl and WordPress.</h5>
 								<p class="justify">
 									Team development of an information website, in collaboration with Synergie, through the WordPress platform,
 									with the aim of offering support and guidance to young people as they enter the world of work.
@@ -451,20 +449,6 @@
 					});
 				});
 		</script>
-
-		<!-- Script per copiare e-mail -->
-		<script>
-				function copyEmail() {
-					const email = "lorenzoangelinetta@outlook.it";
-					navigator.clipboard.writeText(email).then(() => {
-						const msg = document.querySelector(".copied-msg");
-						msg.style.opacity = "1";
-						setTimeout(() => {
-								msg.style.opacity = "0";
-							}, 2000);
-						});
-					}
-		</script>	
 
 	</body>
 </html>

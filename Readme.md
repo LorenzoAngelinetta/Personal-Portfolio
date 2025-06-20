@@ -4,7 +4,7 @@ Portfolio personale che raccoglie informazioni relative al percorso di istruzion
 
 ## 🌐 Link al Sito
 
-👉 [Visualizza il Portfolio Online](https://lorenzoangelinetta.github.io/Personal-Portfolio/)
+👉 [Visualizza il Portfolio Online](https://lorenzoangelinetta.github.io/personal-portfolio/)
 
 ## 🛠️ Tecnologie Utilizzate
 

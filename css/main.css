@@ -399,7 +399,7 @@ SEZIONE TITOLO NOME + INFO
         opacity: 1;
         max-width: none;
         margin-left: 10px;
-        color: var(--accent-color);
+        color: var(--heading-color);
     }
 }
 
@@ -457,7 +457,6 @@ ISTRUZIONE ED ESPERIENZE
 }
 
 .justify {
-  /*text-align: justify;*/
   hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;

@@ -4,7 +4,7 @@ Portfolio personale che raccoglie informazioni relative al percorso di istruzion
 
 ## 🌐 Link al Sito
 
-👉 [Visualizza il Portfolio Online](https://lorenzoangelinetta.github.io/Personal-Portfolio/)
+👉 [Visualizza il Portfolio Online](https://lorenzoangelinetta.github.io/personal-portfolio/)
 
 ## 🛠️ Tecnologie Utilizzate
 
@@ -15,9 +15,4 @@ Il portfolio è stato sviluppato utilizzando le seguenti tecnologie web:
 - **Bootstrap** – Utilizzato come base di partenza e successivamente modificato per creare un design personalizzato
 
 ## 📄 Licenza
-Il design iniziale si basa su un template Bootstrap, successivamente modificato:
-
-Template Name: iPortfolio  
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/  
-Author: BootstrapMade.com  
-License: https://bootstrapmade.com/license/
+Il design iniziale si basa su un template Bootstrap (https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/), successivamente modificato:
